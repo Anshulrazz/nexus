@@ -1,0 +1,20 @@
+.font1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.ice {
+    background: rgb(255, 254, 254);
+    background: rgba(255, 252, 252, 0.632);
+    backdrop-filter: blur(4px);
+}
+.ice1 {
+    background: rgb(255, 254, 254);
+    background: rgba(255, 252, 252, 0.132);
+    backdrop-filter: blur(4px);
+}
+
+.txtb{
+    color: white;
+}
+

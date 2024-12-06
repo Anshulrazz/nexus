@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Anshul Kumar's Portfolio. Explore projects, skills, and contact information of a dedicated computer science student.">
+  <meta name="keywords"
+    content="Anshul Kumar, Kasganj, GLA University, Computer Science, Portfolio, Projects, Skills, Web Development, Android Development, Cyber Security">
+  <meta name="author" content="Anshul Kumar">
+  <meta property="og:title" content="Anshul Kumar's Portfolio">
+  <meta property="og:description"
+    content="Explore projects, skills, and contact information of a dedicated computer science student.">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:url" content="https://yourwebsite.com/index.php">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Anshul Kumar's Portfolio">
+  <meta name="twitter:description"
+    content="Explore projects, skills, and contact information of a dedicated computer science student.">
+  <meta name="twitter:image" content="img/logo.png">
+
+  <!-- Preconnects for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- logo   -->
+  <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+
+  <!-- Page Title -->
+  <title>NexusHub</title>
+</head>
+
+<body>
+  <script>
+    window.addEventListener('load', function () {
+      const initChatbot = () => {
+        !function (w, d, s, ...args) {
+          var div = d.createElement('div');
+          div.id = 'aichatbot';
+          d.body.appendChild(div);
+          w.chatbotConfig = args;
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s);
+          j.defer = true;
+          j.type = 'module';
+          j.src = 'https://aichatbot.sendbird.com/index.js';
+          f.parentNode.insertBefore(j, f);
+        }(window, document, 'script', 'F4C3EDDC-7AD2-4E9A-9A5E-2C39C232E7E5', 'onboarding_bot', {
+          apiHost: 'https://api-cf-us-3.sendbird.com',
+        });
+      };
+      const chatButton = document.createElement('button');
+      chatButton.textContent = 'Chat';
+      chatButton.onclick = () => {
+        initChatbot();
+        chatButton.style.display = 'none';
+      };
+      chatButton.style.position = 'fixed';
+      chatButton.style.bottom = '20px';
+      chatButton.style.right = '20px';
+      chatButton.style.padding = '10px 20px';
+      chatButton.style.fontFamily = 'cursive';
+      chatButton.style.backgroundColor = '#742DDD';
+      chatButton.style.color = 'white';
+      chatButton.style.border = 'none';
+      chatButton.style.borderRadius = '50px';
+      chatButton.style.cursor = 'pointer';
+      chatButton.style.zIndex = '1000';
+      document.body.appendChild(chatButton);
+    });    
+  </script>
+  <div id="root"></div>
+</body>
+
+</html>

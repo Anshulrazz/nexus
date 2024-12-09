@@ -41,44 +41,7 @@
 </head>
 
 <body>
-  <script>
-    window.addEventListener('load', function () {
-      const initChatbot = () => {
-        !function (w, d, s, ...args) {
-          var div = d.createElement('div');
-          div.id = 'aichatbot';
-          d.body.appendChild(div);
-          w.chatbotConfig = args;
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s);
-          j.defer = true;
-          j.type = 'module';
-          j.src = 'https://aichatbot.sendbird.com/index.js';
-          f.parentNode.insertBefore(j, f);
-        }(window, document, 'script', 'F4C3EDDC-7AD2-4E9A-9A5E-2C39C232E7E5', 'onboarding_bot', {
-          apiHost: 'https://api-cf-us-3.sendbird.com',
-        });
-      };
-      const chatButton = document.createElement('button');
-      chatButton.textContent = 'Chat';
-      chatButton.onclick = () => {
-        initChatbot();
-        chatButton.style.display = 'none';
-      };
-      chatButton.style.position = 'fixed';
-      chatButton.style.bottom = '20px';
-      chatButton.style.right = '20px';
-      chatButton.style.padding = '10px 20px';
-      chatButton.style.fontFamily = 'cursive';
-      chatButton.style.backgroundColor = '#742DDD';
-      chatButton.style.color = 'white';
-      chatButton.style.border = 'none';
-      chatButton.style.borderRadius = '50px';
-      chatButton.style.cursor = 'pointer';
-      chatButton.style.zIndex = '1000';
-      document.body.appendChild(chatButton);
-    });    
-  </script>
+ 
   <div id="root"></div>
 </body>
 
